@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="flex flex-col items-center justify-center font-Inter bg-[#ebe1e1]">
+    <div
+        class="background absolute top-0 w-full h-63.5 -z-1 bg-[linear-gradient(to_right,rgba(101,0,163,0.8),rgba(24,120,175,0.8)),url('/images/photo-1546453667-8a8d2d07bc20.jpg')] bg-cover bg-center md:h-70 scroll-smooth">
+    </div>
+    <h1 class="first-heading uppercase text-amber-50 tracking-[5px] text-[min(7vw,36px)] font-bold mt-18.5 sm:text-[clamp(2rem,6.5vw,5rem)]">
+        Word <span class="first-heading--special font-light">Analytics</span>
+    </h1>
+    <h2 class="text-[min(5vw,28px)] font-bold sm:text-[clamp(1rem,4.5vw,2rem)]">ILIYA</h2>
+    <div class="container flex flex-col overflow-hidden w-[88%] h-110 bg-[#fff] rounded-xl mt-10 shadow-outline sm:mt-6.5 sm:h-120 md:mt-6 md:h-130 lg:flex-row xl:w-[1050px]">
+        <textarea
+            class="textarea outline-none focus:outline-none focus:ring-0 placeholder:font-medium placeholder:text-[clamp(.6rem,3.3vw,1.5rem)] placeholder:text-gray-400 resize-none shrink-1 grow-2 font-sans px-8 py-6.5"
+            placeholder="Enter Your Text"></textarea>
+        <section class="states">
+            <section class="state">
+                <span class="stat__number stat__number--words">0</span>
+                <h2 class="second-heading">Words</h2>
+            </section>
+            <section class="state">
+                <span class="stat__number stat__number--characters">0</span>
+                <h2 class="second-heading">Characters</h2>
+            </section>
+            <section class="state">
+                <span class="stat__number stat__number--twitter">280</span>
+                <h2 class="second-heading">Twitter</h2>
+            </section>
+            <section class="state">
+                <span class="stat__number stat__number--facebook">2200</span>
+                <h2 class="second-heading">Facebook</h2>
+            </section>
+        </section>
+        <section class="states">
+
+        </section>
+    </div>
+
+    <footer class="footer flex flex-col justify-center items-center my-4 mx-0 opacity-50">
+        <small class="copyright text-[clamp(.5rem,3vw,1rem)] md:text-[clamp(.5rem,3vw,1rem)">
+            &copy; Copyright by ILIYA All rights reserved
+        </small>
+        <small class="data text-[clamp(.5rem,3vw,1rem)] md:text-[clamp(.5rem,3vw,1rem)">
+            Last checked limits: 17 days ago
+        </small>
+    </footer>
+</body>
+
+</html>
